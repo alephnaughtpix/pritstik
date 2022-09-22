@@ -1,2 +1,2 @@
-# pritstik
-Recreation of original PritStik/MRR website
+# PritStik website
+Recreation of the original PritStik/MRR website optimised for mobile and modern browsers.
