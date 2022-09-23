@@ -1,0 +1,12 @@
+- name: info
+  link: /info/index.html
+  text: INF
+- name: music
+  link: /music/index.html
+  text: MUS
+- name: cd
+  link: /music/cd.html
+  text: CD
+- name: mrr
+  link: /mrr/index.html
+  text: MRR
