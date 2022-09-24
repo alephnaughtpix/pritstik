@@ -1,8 +1,8 @@
-<p><a href="/index.html"><img src="/assets/images/ps1.jpg" border="0" width="100" height="76"></a>&nbsp;</p>
+<p><a href="{{ page.root_index | relative_url }}"><img src="/assets/images/ps1.jpg" border="0" width="100" height="76"></a>&nbsp;</p>
 {% for item in site.data.navigation %}
    {% if page.navigation == item.name %}
    <p class="highlighted"><b><a href="{{ item.link }}">{{ item.text }}</a></b></p>
    {% else %}
-    <p class="red"><font face="Arial,Helvetica" size="+2"><b><i><a href="{{ item.link }}"><font color="#ff0000">{{ item.text }}</font></a></i></b></font></p>
+    <p class="red"><font face="Arial,Helvetica" size="+2"><b><i><a href="{{ item.link | relative_url }}"><font color="#ff0000">{{ item.text }}</font></a></i></b></font></p>
    {% endif %} 
 {% endfor %}

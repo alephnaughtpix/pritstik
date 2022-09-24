@@ -1,12 +1,8 @@
-<html>
-<head>
-  <title>P R I T S T I K</title>
-  <style>
-  A:hover { font-family: Impact,Arial Black; font-size: 24pt }
-  </style>
-<link rel="stylesheet" href="/assets/css/pritstyle.css"></head>
-<body bgcolor="#ffffff"><center>
-  <img src="/assets/images/ps2.jpg" width="300" height="227"> 
+---
+layout: base
+---
+<center>
+  <img src={{ "/assets/images/ps2.jpg" | relaitve_url }} width="300" height="227"> 
   <p><b><i><span class="heading">B I S : <font color="#ff0000">BEFORE</font> : 
     B I S</span></i></b> 
   <p><span class="heading"><b><i>L O F I : <font color="#ff0000">BEFORE</font> 
@@ -18,24 +14,22 @@
   <p><b><i>WE IS A PUNK <font color="#ff0000">WE ARE 1986</font></i></b> 
   <p><b><i>WE ARE MURDER <font color="#ff0000">IN THE RECORDING STUDIO</font></i></b> 
   <p><hr noshade border="1">
-  <p> welcome to the lovely world of <a href="info/index.html"><font color="#ff0000">pritstik</font></a> 
+  <p> welcome to the lovely world of <a href="{{ page.info_index | relative_url }}"><font color="#ff0000">pritstik</font></a> 
     we only lasted one and a half years in realtime but we will last forever thanx 
     to the world of the internet in the far future when machine intelligence has 
     triumphed over humankind datafiles of <font color="#ff0000">pritstik</font> 
     will be a part of computers stortage space in the say way that humans listen 
     to birdsong because lets face it just as humans will find it hard emulate 
-    birdsong computers will have trouble emulating the uniquely human <a href="music/default.html"><font color="#000000">musical 
+    birdsong computers will have trouble emulating the uniquely human <a href="{{ page.music_index | relative_url }}"><font color="#000000">musical 
     experience</font></a> of <font color="#ff0000">pritstik</font> perhaps in 
-    the near furture archeologistics will unearth <a href="music/cd.html"><font color="#000000">our 
+    the near furture archeologistics will unearth <a href="{{ page.cd_index | relative_url }}"><font color="#000000">our 
     CD</font></a> and realise it is an artifact of unique cultural significance 
     either that or a funny circular plastic thingy in the meantime historians 
     will be able to tell their grandchildren of the exploits of this truly geat 
-    underground group and its record company <a href="/web/20030115181301/http://www.seniordads.fsnet.co.uk/mrr/default.htm" target=""><font color="#ff0000">michael 
+    underground group and its record company <a href="{{ page.mrr_index | relative_url }}" target=""><font color="#ff0000">michael 
     rotten records</font></a> 
   <p>&nbsp;
   <hr noshade border="1">
-  <p><a href="music/cd.html"><img src="/assets/images/cd/cd_front_tiny.jpg" width="200" height="199" border="0"></a> 
+  <p><a href="music/cd.html"><img src={{ "/assets/images/cd/cd_front_tiny.jpg" | relative_url }} width="200" height="199" border="0"></a> 
   <p><a href="music/cd.html"><font color="#000000">murder in the recording studio</font></a> 
 </center>
-</body>
-</html>

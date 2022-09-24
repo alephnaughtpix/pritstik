@@ -49,6 +49,16 @@ collections:
     
 defaults:
   - scope:
+     path: ""
+    values:
+      root_index: "/index.html"
+      info_index: "/info/index.html"
+      music_index: "/music/index.html"
+      cd_index: "/music/cd.html"
+      mrr_index: "/mrr/index.html"
+      studio_link: "/info/recording.html#Studios"
+      instruments_link: "/info/recording.html#Instruments"
+  - scope:
       path: ""
       type: "songs"
     values:
