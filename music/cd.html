@@ -12,19 +12,20 @@ navigation: cd
               </div>
             </center>
             <center>
-              <p><a target="_new" href="https://www.youtube.com/watch?v=XojtLXuMRgU"><img src="/assets/images/cd/cd_front_small.jpg" width="400" height="397" border="0"></a></p>
+              <p><a target="_new" href="https://www.youtube.com/watch?v=XojtLXuMRgU"><img src="{{ "/assets/images/cd/cd_front_small.jpg" | reltive_url }}" width="400" height="397" border="0"></a></p>
               <table border="0" width="400" cellpadding="4" id="track-listing">
                 {% assign tracks = site.songs | sort: "track" %}
                 {% for song in tracks %}
+                    {% capture art_url %}/assets/images/songs/{{ song.image }}{% endcapture %}
                 <tr align="LEFT" valign="TOP"> 
                   <td align="RIGHT" valign="TOP" class="highlighted">{{ song.track }}</td>
                   
-            <td align="LEFT" valign="TOP" class="art-mini"><a href="{{ song.url }}"><img src="/assets/images/songs/{{ song.image }}" width="70" height="70" border="0"></a></td>
+            <td align="LEFT" valign="TOP" class="art-mini"><a href="{{ song.url | relative_url }}"><img src="{{ art_url | relative_url }}" width="70" height="70" border="0"></a></td>
                   
-            <td align="LEFT" valign="TOP"><a href="{{ song.url }}"><font color="#FF0000">{{ song.title | downcase }}</font></a></td>
+            <td align="LEFT" valign="TOP"><a href="{{ song.url | relative_url }}"><font color="#FF0000">{{ song.title | downcase }}</font></a></td>
                   <td align="RIGHT" valign="TOP" style="color:#aaaaaa;"><font color="#aaaaaa">listen</font></td>
                 </tr>
                 {% endfor %}
                 </table>
-              <p><img src="/assets/images/cd/cd_inside_small.jpg" width="400" height="199"></p>
+              <p><img src=" {{ "/assets/images/cd/cd_inside_small.jpg" | relative_url }}" width="400" height="199"></p>
             </center>
