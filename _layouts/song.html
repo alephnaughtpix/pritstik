@@ -7,7 +7,5 @@ navigation: music
 <p class="smaller" style="color:#aaaaaa;">MP3: [Download|StreamLo|StreamHi] </p>
 <p class="subheading"><font color="#FF0000" class="red">lyrics</font> </p>
 {% capture art_url %}/assets/images/songs/{{ page.image }}{% endcapture %}
-<p><font color="#ff0000" class="highlighted"><img class="art-full" src="{{ art_url | relative }}" width="200" height="200" align="RIGHT"></font>
-
-
+<p><font color="#ff0000" class="highlighted"><img class="art-full" src="{{ art_url | relative_url }}" width="200" height="200" align="RIGHT"></font>
 {{ content }}
