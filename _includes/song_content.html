@@ -1,5 +1,12 @@
+{% if lyrics %}
+<p class="subheading"><font color="#FF0000" class="red">lyrics</font> </p>
 {{ lyrics }}
-
-<p class="subheading"><font color="#FF0000">info</font> 
-            
+{% endif %}
+{% if info %}
+<p class="subheading"><font color="#FF0000">info</font>           
 {{ info }}        
+{% endif %}
+{% if reviews %}
+<p class="subheading"><font color="#FF0000" class="red">reviews</font></p> 
+{{ reviews }}        
+{% endif %}

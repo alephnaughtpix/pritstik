@@ -27,9 +27,9 @@ audio: pritstik_1987.mp3
 {% capture info %}
       <p>This is a bit more sedate than "<a href="pritstik1986.html"><font color="#ff0000">PritStik 
         (1986)</font></a>" because we used a laid-back "Reggae" rhythm on this 
-        version recorded on <a href="/web/20020321094547/http://www.seniordads.fsnet.co.uk/mrr/pritstik{{ page.studio_link | relative_url }}">setup 
+        version recorded on <a href="{{ page.studio_link | relative_url }}">setup 
         3</a>. But there's more to this one in production terms!!! The main track 
-        involves PritStik performing, the organ on the <a href="/web/20020321094547/http://www.seniordads.fsnet.co.uk/mrr/pritstik{{ page.instruments_link | relative_url }}">vss100</a>, 
+        involves PritStik performing, the organ on the <a href="{{ page.instruments_link | relative_url }}">vss100</a>, 
         a harmonic "duuuhh!" on the sampler, and a really space-age synth sound!!! 
         Then in further overdubs, the sampler was used to add backing vocals, 
         some echo FX, accentuate the drum solo, and add the guitar solo!!! (Yes, 
@@ -37,7 +37,9 @@ audio: pritstik_1987.mp3
       <p>This track when released on mp3.com on April 2000, shortly afterwards 
         got to no. 1 in the Glasgow charts and no. 3 in the reggae charts, just 
         behind Bob Marley and Pato Banton!! 
-      <p class="subheading"><font color="#FF0000" class="red">reviews</font></p> 
+{% endcapture %}
+
+{% capture reviews %}
       <p>Some bloke from a hip band in Chicago called Scope Creep said on his 
         "<a href="http://web.archive.org/web/20020321094547/http://www.theworstoftheworst.com/"><font color="#ff0000">Worst of the Worst</font></a>" 
         page: 
@@ -64,7 +66,6 @@ audio: pritstik_1987.mp3
       </ol>
       <p><span class="red"><font color="#FF0000">IMPORTANT NOTE</font></span>- 
         PritStik have never beaten cats or decomposing human remains with sticks 
-        in pursuit of their indvidual vision of musical expression. </p>
-      <p>&nbsp;</p>
+        in pursuit of their individual vision of musical expression. </p>
 {% endcapture %}
 {% include song_content.html %}
