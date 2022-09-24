@@ -1,4 +1,4 @@
-<p><a href="{{ page.root_index | relative_url }}"><img src="/assets/images/ps1.jpg" border="0" width="100" height="76"></a>&nbsp;</p>
+<p><a href="{{ page.root_index | relative_url }}"><img src="{{ "/assets/images/ps1.jpg" | relative_url }} border="0" width="100" height="76"></a>&nbsp;</p>
 {% for item in site.data.navigation %}
    {% if page.navigation == item.name %}
    <p class="highlighted"><b><a href="{{ item.link }}">{{ item.text }}</a></b></p>
