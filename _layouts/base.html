@@ -1,11 +1,13 @@
+---
+layout: compress
+---
 <html>
 <head>
 <title>P R I T S T I K {% if page.title %}: {{ page.title }} {% endif %}</title>
-<link rel="stylesheet" href="{{"/assets/css/pritstyle.css" | relative_url }}">
+<link rel="stylesheet" href="{{"/assets/css/pritstyle.css" | relative_url }}" media="screen">
 <link rel="shortcut icon" type="image/png" href="{{ "/favicon.ico" | relative_url }}">
 </head>
-<body bgcolor="#ffffff">
-{{ main_index }}
+<body>
 {{ content }}
 </body>
 </html>

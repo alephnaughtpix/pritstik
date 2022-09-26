@@ -1,13 +1,9 @@
 ---
 layout: base
 ---
-<table border="0" width="100%">
-  <tr> 
-    <td align="center" valign="top"> 
-        {% include navigation.html %}
- </td>
-    <td valign="top">
-        {{ content }}
-    </td>
-  </tr>
-</table>
+<div id="page-container">
+    {% include navigation.html %}
+    <section id="page-content">
+    {{ content }}
+    </section>
+</div>

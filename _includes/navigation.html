@@ -1,8 +1,12 @@
-<p><a href="{{ page.root_index | relative_url }}"><img src="{{ "/assets/images/ps1.jpg" | relative_url }}" border="0" width="100" height="76"></a>&nbsp;</p>
-{% for item in site.data.navigation %}
-   {% if page.navigation == item.name %}
-   <p class="highlighted"><b><a href="{{ item.link }}">{{ item.text }}</a></b></p>
-   {% else %}
-    <p class="red"><font face="Arial,Helvetica" size="+2"><b><i><a href="{{ item.link | relative_url }}"><font color="#ff0000">{{ item.text }}</font></a></i></b></font></p>
-   {% endif %} 
-{% endfor %}
+<nav id="main-navigation">
+    <a href="{{ page.root_index | relative_url }}"><img src="{{ "/assets/images/ps1.jpg" | relative_url }}" border="0" width="100" height="76"></a>
+    <ul>
+    {% for item in site.data.navigation %}
+        {% if page.navigation == item.name %}
+        <li class="active"><a href="{{ item.link | relative_url }}">{{ item.text }}</a></li>
+        {% else %}
+        <li><a href="{{ item.link | relative_url }}">{{ item.text }}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+</nav>

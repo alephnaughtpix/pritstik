@@ -3,29 +3,21 @@ layout: main_page
 title: C D
 navigation: cd
 ---
-<center>
-              <div align="LEFT"> 
-                <p><font color="#FF0000" class="red">murder in the recording studio</font> 
-                  1987</p>
-                <p>our one and only cd! now remastered and <a target="_new" href="https://www.youtube.com/watch?v=XojtLXuMRgU"><font color="#000000">available 
-                  online</font></a>!!!</p>
-              </div>
-            </center>
-            <center>
-              <p><a target="_new" href="https://www.youtube.com/watch?v=XojtLXuMRgU"><img src="{{ "/assets/images/cd/cd_front_small.jpg" | relative_url }}" width="400" height="397" border="0"></a></p>
-              <table border="0" width="400" cellpadding="4" id="track-listing">
-                {% assign tracks = site.songs | sort: "track" %}
-                {% for song in tracks %}
-                    {% capture art_url %}/assets/images/songs/{{ song.image }}{% endcapture %}
-                <tr align="LEFT" valign="TOP"> 
-                  <td align="RIGHT" valign="TOP" class="highlighted">{{ song.track }}</td>
-                  
-            <td align="LEFT" valign="TOP" class="art-mini"><a href="{{ song.url | relative_url }}"><img src="{{ art_url | relative_url }}" width="70" height="70" border="0"></a></td>
-                  
-            <td align="LEFT" valign="TOP"><a href="{{ song.url | relative_url }}"><font color="#FF0000">{{ song.title | downcase }}</font></a></td>
-                  <td align="RIGHT" valign="TOP" style="color:#aaaaaa;"><font color="#aaaaaa">listen</font></td>
-                </tr>
-                {% endfor %}
-                </table>
-              <p><img src=" {{ "/assets/images/cd/cd_inside_small.jpg" | relative_url }}" width="400" height="199"></p>
-            </center>
+<h3><em>murder in the recording studio</em> 1987</h3>
+<p>our one and only cd! now remastered and <a target="_new" class="black" href="https://www.youtube.com/watch?v=XojtLXuMRgU">available online</a>!!!</p>
+<section id="album">
+  <p><a target="_new" href="https://www.youtube.com/watch?v=XojtLXuMRgU"><img src="{{ "/assets/images/cd/cd_front_small.jpg" | relative_url }}" width="400" height="397" border="0"></a></p>
+  <table id="track-listing">
+    {% assign tracks = site.songs | sort: "track" %}
+    {% for song in tracks %}
+        {% capture art_url %}/assets/images/songs/{{ song.image }}{% endcapture %}
+    <tr> 
+      <td class="highlighted">{{ song.track }}</td>
+      <td class="art-mini"><a href="{{ song.url | relative_url }}"><img src="{{ art_url | relative_url }}" width="70" height="70" border="0"></a></td>
+      <td><a href="{{ song.url | relative_url }}">{{ song.title | downcase }}</a></td>
+      <td class="disabled">listen</td>
+    </tr>
+    {% endfor %}
+    </table>
+  <p><img src=" {{ "/assets/images/cd/cd_inside_small.jpg" | relative_url }}" width="400" height="199"></p>
+</section>

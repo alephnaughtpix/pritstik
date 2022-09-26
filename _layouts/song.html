@@ -3,8 +3,8 @@ layout: main_page
 title: M U S I C
 navigation: music
 ---
-<p><font color="#ff0000" class="highlighted">{{ page.title | downcase }} </font> </p>
-<p class="smaller" style="color:#aaaaaa;">MP3: [Download|StreamLo|StreamHi] </p>
+<h1 class="song-title">{{ page.title | downcase }}</h1>
+<p class="listen">MP3: [Download|StreamLo|StreamHi] </p>
 {% capture art_url %}/assets/images/songs/{{ page.image }}{% endcapture %}
-<img class="art-full" src="{{ art_url | relative_url }}" width="200" height="200" align="RIGHT">
+<img class="art-full" src="{{ art_url | relative_url }}" alt="Cover art for song '{{ page.title }}'.">
 {{ content }}
