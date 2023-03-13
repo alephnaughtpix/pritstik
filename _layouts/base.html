@@ -6,9 +6,16 @@ layout: compress
 <title>P R I T S T I K {% if page.title %}: {{ page.title }} {% endif %}</title>
 <link rel="stylesheet" href="{{"/assets/css/pritstyle.css" | relative_url }}" media="screen">
 <link rel="shortcut icon" type="image/png" href="{{ "/favicon.ico" | relative_url }}">
+{% if page.include_gallery %}
+<link rel="stylesheet" href="{{"/assets/css/simple-lightbox.min.css" | relative_url }}" media="screen">
+<script src="{{"/assets/js/simple-lightbox.min.js" | relative_url }}"></script>
+{% endif %}
 </head>
 <body>
 {{ content }}
 <footer>this site is mantained <a href="https://github.com/alephnaughtpix/pritstik" target="_blank">here.</a></footer>
+{% if page.include_gallery %}
+<script src="{{"/assets/js/gallery.js" | relative_url }}"></script>
+{% endif %}
 </body>
 </html>

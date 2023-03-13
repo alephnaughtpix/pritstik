@@ -2,11 +2,12 @@
 layout: main_page
 title: C D
 navigation: cd
+include_gallery: true
 ---
 <h3><em>murder in the recording studio</em> 1987</h3>
 <p>our one and only cd! now remastered and <a target="_new" class="black" href="https://www.youtube.com/watch?v=XojtLXuMRgU">available online</a>!!!</p>
 <section id="album">
-  <p><a target="_new" href="https://www.youtube.com/watch?v=XojtLXuMRgU"><img src="{{ "/assets/images/cd/cd_front_small.jpg" | relative_url }}" width="400" height="397" border="0"></a></p>
+  <p><a class="gallery" href="{{ "/assets/images/cd/cd_front.png" | relative_url }}"><img src="{{ "/assets/images/cd/cd_front_small.jpg" | relative_url }}" width="400" height="397" alt="Front cover of 'Murder in the Recording Studio' by PritStik" title="Front cover of 'Murder in the Recording Studio' by PritStik" border="0"></a></p>
   <table id="track-listing">
     {% assign tracks = site.songs | sort: "track" %}
     {% for song in tracks %}
@@ -23,5 +24,5 @@ navigation: cd
     </tr>
     {% endfor %}
     </table>
-  <p><img src=" {{ "/assets/images/cd/cd_inside_small.jpg" | relative_url }}" width="400" height="199"></p>
+  <p><a class="gallery" href="{{ "/assets/images/cd/cd_inside.png" | relative_url }}"><img src=" {{ "/assets/images/cd/cd_inside_small.jpg" | relative_url }}" width="400" height="199"  alt="Inside cover art of 'Murder in the Recording Studio' by PritStik" title="Inside cover art of Murder in the Recording Studio by PritStik"></a></p>
 </section>
