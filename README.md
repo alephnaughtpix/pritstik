@@ -4,6 +4,11 @@ Recreation of the original PritStik website optimised for mobile and modern brow
 
 ## Updates
 
+### v0.3
+
+* Added lightbox style gallery feature. This uses [SimpleLightbox](https://simplelightbox.com). (The first Javascript in this website!)
+* Applied that gallery feature to the front and inside cover art of the CD on the CD page, so that you can now see the full sized cover art from the original PSD files for the cover art.
+
 ### v0.2
 
 * Added a "video" section for songs pages.
