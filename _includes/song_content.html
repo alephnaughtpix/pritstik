@@ -1,16 +1,26 @@
+{% if video %}
+<a name="video"></a>
+<section id="video">
+<h2 class="subheading">video</h2>
+{{ video }}
+</section>
+{% endif %}
 {% if lyrics %}
+<a name="lyrics"></a>
 <section id="lyrics">
 <h2 class="subheading">lyrics</h2>
 {{ lyrics }}
 </section>
 {% endif %}
 {% if info %}
+<a name="info"></a>
 <section id="info">
 <h2 class="subheading">info</h2>           
 {{ info }}        
 </section>
 {% endif %}
 {% if reviews %}
+<a name="reviews"></a>
 <section id="reviews">
 <h2 class="subheading">reviews</h2> 
 {{ reviews }}        

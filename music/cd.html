@@ -15,7 +15,11 @@ navigation: cd
       <td class="highlighted">{{ song.track }}</td>
       <td class="art-mini"><a href="{{ song.url | relative_url }}"><img src="{{ art_url | relative_url }}" width="70" height="70" border="0"></a></td>
       <td><a href="{{ song.url | relative_url }}">{{ song.title | downcase }}</a></td>
+      {% if song.video %}
+      <td><a href="{{ song.url | relative_url }}#video">listen</a></td>
+      {% else %}
       <td class="disabled">listen</td>
+      {% endif %}
     </tr>
     {% endfor %}
     </table>

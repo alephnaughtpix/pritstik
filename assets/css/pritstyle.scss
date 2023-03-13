@@ -1,27 +1,39 @@
 ---
 ---
+:root {
+    --red: #ff0000;
+    --white: #ffffff;
+    --black: #000000;
 
-$red: #ff0000;
-$white: #ffffff;
-$black: #000000;
+    --background-colour: var(--white);
+    --text-colour: var(--black);
+    --emphasis-colour: var(--red);
+    --diminished-emphasis-colour: #dd0000;
+
+    --link-colour: var(--emphasis-colour);
+    --link-hover-colour: var(--black);
+    --link-active-colour: var(--black);
+    --link-visited-colour: var(--diminished-emphasis-colour);
+
+    --hr-colour: rgb(128, 128, 128);
+    --disabled-colour: #aaaaaa;
+}
 
 body { 
     font-family: Arial, Helvetica, sans-serif; 
     font-size:14pt; 
-    color: $black; 
-    background-color: $white; 
+    color: var(--text-colour);
+    background-color: var(--background-colour);
     font-weight:bold; 
 } 
 
 em {
-    color: red;
+    color: var(--emphasis-colour);
     font-style: normal;
 }
 td { 
     font-family: Arial, Helvetica, sans-serif; 
     font-size:14pt; 
-    color: $black; 
-    background-color: $white; 
     font-weight:bold;
 } 
 .heading { 
@@ -35,14 +47,16 @@ td {
     }
 } 
 .highlighted { 
-    font-family: Impact,Arial Black; 
+    font-family: Impact, Arial;
+    color: var(--text-colour); 
     font-size: 24pt; 
 }
 .red {  
-    color: $red;
+    color: var(--red);
 }
 a:hover { 
-    font-family: Impact,Arial Black; 
+    font-family: Impact,Arial;
+    color: var(--link-hover-colour);
     font-size: 24pt; 
 }
 .smaller { 
@@ -50,29 +64,29 @@ a:hover {
     font-size:12pt;
 }
 a:link { 
-    color: $red;
+    color: var(--link-colour);
 }
 a:visited { 
-    color:#dd0000;
+    color: var(--link-visited-colour);
 }
 a:active { 
-    color: $black;
+    color: var(--link-active-colour);
 }
 .subheading { 
     font-family:"Arial Black", Arial, Helvetica; 
     font-size:18pt; 
     font-weight:normal; 
-    color: $red;
+    color: var(--red);
 }
-.black {  color: $black}
+.black {  color: var(--black); }
 
 #homepage {
     text-align: center;
     hr {
-        border: 1px solid rgb(128, 128, 128);;
+        border: 1px solid var(--hr-colour);
     }
     a {
-        color: $black;
+        color: var(--text-colour);
     }
     img.logo {
         width: 300px;
@@ -102,19 +116,21 @@ a:active {
         img {
             width: 70px;
             height: 70px;
-            border: 1px solid $black;
+            border: 1px solid;
+            border-color: var(--black);
         }
     }
 }
 
 .disabled {
-    color: #aaaaaa;
+    color: var(--disabled-colour);
 }
 
 img.art-full {
         width: 200px;
         height: 200px;
-        border: 1px solid $black;
+        border: 1px solid;
+        border-color: var(--black);
         margin-top: 4em;
         float: right;
 }
@@ -128,8 +144,9 @@ img.art-full {
 #page-content {
     width: 100%;
     .subnav {
-        font-family: Impact,Arial Black; font-size: 24pt;
-        color: $red;
+        font-family: Impact,Arial; 
+        font-size: 24pt;
+        color: var(--red);
     }
 }
 
@@ -146,10 +163,10 @@ nav#main-navigation {
             font-weight: bold;
             font-size: larger;
             a {
-                color: $red;
+                color: var(--red);
             }
             &.active {
-                font-family: Impact,Arial Black;
+                font-family: Impact,Arial;
                 font-size: 24pt;
                 font-style: normal;
             }
@@ -173,7 +190,7 @@ h3 {
             padding-right: 5px;
             vertical-align: top;
             &:first-child {
-                color: $red;
+                color: var(--red);
                 white-space: nowrap;
             }
         }
@@ -185,14 +202,14 @@ ul.song-list {
     li {
         list-style: none;
         display: inline;
-        color: $black;
+        color: (--text-colour);
         a {
-            color: $black;
+            color: var(--text-colour);
         }
         &:nth-child(even) {
-            color: $red;
+            color: var(--red);
             a {
-                color: $red;
+                color: var(--emphasis-colour);
             }
         }
     }
@@ -204,7 +221,7 @@ ul.song-list {
 
 .song-title {
     @extend .highlighted;
-    @extend .red;
+    color: var(--red);
 }
 
 .listen {
