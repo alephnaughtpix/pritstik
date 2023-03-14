@@ -6,7 +6,7 @@ navigation: music
 <h1 class="song-title">{{ page.title | downcase }}</h1>
 {% if page.mp3 %}
 {% capture mp3_url %}/assets/audio/mp3/{{ page.mp3 }}{% endcapture %}
-<p class="listen">Download [<a href="{{ mp3_url }}">MP3</a>]</p>
+<p class="listen">Download [<a href="{{ mp3_url | relative_url }}">MP3</a>]</p>
 {% else %}
 <p class="listen">MP3: [Download|StreamLo|StreamHi] </p>
 {% endif %}
