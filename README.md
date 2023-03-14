@@ -6,9 +6,14 @@ The [original website](http://web.archive.org/web/20040816015951/http://www.seni
 
 This recreation preserves the look and the content of the original website, but removes the &lt;FONT&gt; tags and Dreamweaver direcctives within the HTML, further optimises the HTML and CSS, and reconfigures the generation of the website as a [Jekyll](jekyllrb.com/) instance on [GitHub Pages](https://pages.github.com), with added HTML and CSS compression. As a result, the HTML of the largest page is only 5KB and the CSS is 4KB, so you'll probably spend more time loading the images than the page itself! In addition, some wonky links and broken images have been fixed.
 
-And! This recreation includes something that was not possible in the original website: a [favicon](https://github.com/alephnaughtpix/pritstik/blob/main/favicon.ico)!
+And! This recreation includes something that was not possible in the original website: a [favicon](https://alephnaughtpix.github.io/pritstik/favicon.ico)!
 
 ## Updates
+
+### v0.4 (2023-03-14)
+
+* Added the original MP3 files, taken straight from the original MP3.com DAM CD-A/ROM of *Murder in the Recording Studio*. That means that these are the original 128kbps stereo MP3s that were uploaded to MP3.com in 2000. (The bitrate restriction was imposed by MP3.com) As these MP3s were used as the source for CD-Audio, that means these are as good a quality as if you had bought the album from mp3.com in 2000! (The versions I've seen from file-sharing sites are likely to be sourced from an MP3.com DAM CD as well, but still...)
+* Added download links to the MP3s from the songs pages.
 
 ### v0.3 (2023-03-13)
 
