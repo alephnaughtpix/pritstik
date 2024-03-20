@@ -4,7 +4,7 @@ Recreation of the original PritStik website optimised for mobile and modern brow
 
 The [original website](http://web.archive.org/web/20040816015951/http://www.seniordads.fsnet.co.uk/mrr/pritstik/default.html) was created in [Macromedia Dreamweaver](https://en.wikipedia.org/wiki/Adobe_Dreamweaver) and hosted on [Freeserve](https://en.wikipedia.org/wiki/Freeserve) on [The Senior Dads](https://www.youtube.com/@seniordads9594) website from 2000 onwards. The website made use of Dreamweaver features such as libraries and macros. Although the website made use of (at the time, new) CSS, it also used a lot of &lt;[FONT](https://www.w3schools.com/tags/tag_font.asp)&gt; tags as a fallback for older browsers. Despite this, the website was optimised for dialup internet access in an age when that was the default for most users of the internet in the UK.
 
-This recreation preserves the look and the content of the original website, but removes the &lt;FONT&gt; tags and Dreamweaver direcctives within the HTML, further optimises the HTML and CSS, and reconfigures the generation of the website as a [Jekyll](jekyllrb.com/) instance on [GitHub Pages](https://pages.github.com), with added HTML and CSS compression. As a result, the HTML of the largest page is only 5KB and the CSS is 4KB, so you'll probably spend more time loading the images than the page itself! In addition, some wonky links and broken images have been fixed.
+This recreation preserves the look and the content of the original website, but removes the &lt;FONT&gt; tags and Dreamweaver directives within the HTML, further optimises the HTML and CSS, and reconfigures the generation of the website as a [Jekyll](jekyllrb.com/) instance on [GitHub Pages](https://pages.github.com), with added HTML and CSS compression. As a result, the HTML of the largest page is only 5KB and the CSS is 4KB, so you'll probably spend more time loading the images than the page itself! In addition, some wonky links and broken images have been fixed.
 
 And! This recreation includes something that was not possible in the original website: a [favicon](https://alephnaughtpix.github.io/pritstik/favicon.ico)!
 
@@ -23,7 +23,7 @@ And! This recreation includes something that was not possible in the original we
 ### v0.2 (2023-03-12)
 
 * Added a "video" section for songs pages.
-* Added link to a new "lyric video" for "[PritStik 1987](https://alephnaughtpix.github.io/pritstik/music/songs/pritstik1987.html)".
+* Added link to a new "lyric video" for "[PritStik (1987)](https://alephnaughtpix.github.io/pritstik/music/songs/pritstik1987.html)".
 * Changed the "listen" links code in the CD page to link to the video section of the page if there is a video.
 * Cleaned up some of the CSS files.
 * Added a small watermark at the bottom of each page, linking back here.
